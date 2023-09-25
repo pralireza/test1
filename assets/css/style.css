@@ -1,6 +1,9 @@
-@media(min-width:600px){
-
-.top-navbar{
+@media (min-width: 600px) {
+  .top-navbar {
     box-shadow: 0 0 50px black !important;
-}
+  }
+  #top-action-section {
+    display: flex !important;
+    align-items: center !important;
+  }
 }
