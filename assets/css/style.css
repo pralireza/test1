@@ -7,3 +7,19 @@
     align-items: center !important;
   }
 }
+
+
+
+.user_list_item.active   .user_list_arrow_icon{
+  transform: rotate(180deg);
+
+}
+.user_list_item.active{
+  background-color: rgb(160, 250, 250);
+}
+table.highlight > tbody > tr:hover {
+  background-color: rgba(113, 250, 170, 0.5);
+}
+.container{
+  width: 100% !important;
+}

@@ -1,98 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my project</title>
-    <link rel="stylesheet" href="/assets/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="/assets/css/util.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css ">
-</head>
+    <link rel="stylesheet" href="/assets/materialize/css/materialize.min.css" />
+    <link rel="stylesheet" href="/assets/css/util.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css " />
+  </head>
 
-<body>
+  <body>
     <!-- navbar section___________________start___________________________-->
 
     <nav class="teal accent-2 top-navbar">
-        <div class=" nav-wrapper">
-            <a href="#!" class="blue-text hide-on-med-and-up">user management</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text"><i
-                    class="material-icons">menu</i></a>
-            <ul class=" hide-on-med-and-down">
-                <li><a href="/" class="black-text">home</a></li>
-                <li><a href="/users.html" class="black-text">usermanagement</a></li>
-                <li><a href="https://codeyad.com" class="black-text">codeyad</a></li>
-                <li><a href="https://dodik.ir" class="black-text">dodik</a></li>
-            </ul>
-        </div>
+      <div class="nav-wrapper">
+        <a href="#!" class="blue-text hide-on-med-and-up">user management</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="hide-on-med-and-down">
+          <li><a href="/" class="black-text">home</a></li>
+          <li><a href="/users.html" class="black-text">usermanagement</a></li>
+          <li><a href="https://codeyad.com" class="black-text">codeyad</a></li>
+          <li><a href="https://dodik.ir" class="black-text">dodik</a></li>
+        </ul>
+      </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="assets/images/office2.jpg" class="w-full">
-                </div>
-                <a href="#user"><img class="circle" src="assets/images/avataricon.jpg"></a>
-                <a href="#name"><span class="white-text name">alireza moradi</span></a>
-                <a href="#email"><span class="white-text email">ar.moradijob@gmail.com</span></a>
-            </div>
-        </li>
-        <li><a href="#!"><i class="material-icons">link</i>اولین لینک من</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a class="subheader">pages</a></li>
-        <li><a class="waves-effect" href="/index.html">home</a></li>
-        <li><a class="waves-effect" href="/users.html">users</a></li>
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="assets/images/office2.jpg" class="w-full" />
+          </div>
+          <a href="#user"
+            ><img class="circle" src="assets/images/avataricon.jpg"
+          /></a>
+          <a href="#name"
+            ><span class="white-text name">alireza moradi</span></a
+          >
+          <a href="#email"
+            ><span class="white-text email">ar.moradijob@gmail.com</span></a
+          >
+        </div>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">link</i>اولین لینک من</a>
+      </li>
+      <li><a href="#!">Second Link</a></li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a class="subheader">pages</a></li>
+      <li><a class="waves-effect" href="/index.html">home</a></li>
+      <li><a class="waves-effect" href="/users.html">users</a></li>
     </ul>
     <!-- navbar section________________________end_________________________ -->
 
+    <section id="top-action-section" class="row m-b-0 container">
+      <!-- content section________________________start_________________________ -->
 
-    <!-- content section________________________start_________________________ -->
+      <!--  add button_______________________start_________________________ -->
 
+      <div class="p-l-10 p-r-10 p-t-10 col s12 m3 l2">
+        <button
+          class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-full rounded_pill flex-c"
+        >
+          <i class="material-icons m-r-5">add</i>
+          Add user
+        </button>
+      </div>
 
+      <!-- add button_________________________end___________________________ -->
 
-    <section id="top-action-section" class="row ">
+      <!-- search section______________________start_________________________ -->
 
-        <!--  add button_______________________start_________________________ -->
-
-        <div class="p-l-10 p-r-10 p-t-10 col s12 m4 l3">
-            <button class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-full rounded_pill flex-c">
-                <i class="material-icons m-r-5">add</i>
-                Add user
-            </button>
+      <div class="row col s12 m9 l8 m-b-5">
+        <div class="input-field">
+          <input id="search" type="text" class="validate" />
+          <label for="search">
+            <i class="material-icons pos-relative top-7">search</i>
+            search</label
+          >
         </div>
+      </div>
 
+      <!-- search section______________________end___________________________ -->
 
-
-        <!-- add button_________________________end___________________________ -->
-
-
-        <!-- search section______________________start_________________________ -->
-
-        <div class="row col s12 m8 l9">
-            <div class="input-field">
-                <input id="search" type="text" class="validate">
-                <label for="search">
-
-                    <i class="material-icons pos-relative top-7">search</i>
-                    search</label>
-            </div>
-        </div>
-
-        <!-- search section______________________end___________________________ -->
-
+      <!-- content section________________________end_________________________ -->
     </section>
 
-    <!-- content section________________________start_________________________ -->
+    <section class="user_list_section">
+      <ul class="collapsible show-on-med-and-down hide-on-med-and-up">
+        <li class="user_list_item">
+          <div class="collapsible-header">
+            <i
+              class="material-icons blue-text darken-2 user_list_arrow_icon trans-0-3"
+              >arrow_drop_down_circle</i
+            >
+            alirezamoradi
+          </div>
+          <div class="collapsible-body">
+            <div class="p-all-5">
+              <span class="f-bold">username :</span>
+              <span>alireza</span>
+            </div>
+            <div class="p-all-5">
+              <span class="f-bold">email :</span>
+              <span>ar.moradijob@gmail.com</span>
+            </div>
+            <div class="p-all-5">
+              <span class="f-bold">Addres :</span>
+              <span>berlin - example street ...</span>
+            </div>
+            <div class="p-all-5 flex-l-m">
+              <span class="f-bold">action :</span>
+              <i class="material-icons red-text m-l-5 m-r-5"> delete_forever</i>
+              <i class="material-icons orange-text darken-3 m-l-5 m-r-5"
+                >edit</i
+              >
+            </div>
+          </div>
+        </li>
+        <li class="user_list_item">
+          <div class="collapsible-header">
+            <i
+              class="material-icons blue-text darken-2 user_list_arrow_icon trans-0-3"
+              >arrow_drop_down_circle</i
+            >
+            alirezamoradi
+          </div>
+          <div class="collapsible-body">
+            <div class="p-all-5">
+              <span class="f-bold">username :</span>
+              <span>alireza</span>
+            </div>
+            <div class="p-all-5">
+              <span class="f-bold">email :</span>
+              <span>ar.moradijob@gmail.com</span>
+            </div>
+            <div class="p-all-5">
+              <span class="f-bold">Addres :</span>
+              <span>berlin - example street ...</span>
+            </div>
+            <div class="p-all-5 flex-l-m">
+              <span class="f-bold">action :</span>
+              <i class="material-icons red-text m-l-5 m-r-5"> delete_forever</i>
+              <i class="material-icons orange-text darken-3 m-l-5 m-r-5"
+                >edit</i
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div>
+        <table
+          class="striped centered highlight show-on-med-and-up hide-on-med-and-down container"
+        >
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>name</th>
+              <th>username</th>
+              <th>email</th>
+              <th>address</th>
+              <th>action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>alireza moradi</td>
+              <td>pralireza</td>
+              <td>ar.moradijob@gmail.com</td>
+              <td>berlin - example street ...</td>
+              <td>
+                <i
+                  class="material-icons orange-text darken-3 m-l-5 m-r-5 hov-pointer"
+                  >edit</i
+                >
+                <i class="material-icons red-text m-l-5 m-r-5 hov-pointer"
+                  >delete_forever</i
+                >
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>alireza moradi</td>
+              <td>pralireza</td>
+              <td>ar.moradijob@gmail.com</td>
+              <td>berlin - example street ...</td>
+              <td>
+                <i
+                  class="material-icons orange-text darken-3 m-l-5 m-r-5 hov-pointer"
+                  >edit</i
+                >
+                <i class="material-icons red-text m-l-5 m-r-5 hov-pointer"
+                  >delete_forever</i
+                >
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>alireza moradi</td>
+              <td>pralireza</td>
+              <td>ar.moradijob@gmail.com</td>
+              <td>berlin - example street ...</td>
+              <td>
+                <i
+                  class="material-icons orange-text darken-3 m-l-5 m-r-5 hov-pointer"
+                  >edit</i
+                >
+                <i class="material-icons red-text m-l-5 m-r-5 hov-pointer"
+                  >delete_forever</i
+                >
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>alireza moradi</td>
+              <td>pralireza</td>
+              <td>ar.moradijob@gmail.com</td>
+              <td>berlin - example street ...</td>
+              <td>
+                <i
+                  class="material-icons orange-text darken-3 m-l-5 m-r-5 hov-pointer"
+                  >edit</i
+                >
+                <i class="material-icons red-text m-l-5 m-r-5 hov-pointer"
+                  >delete_forever</i
+                >
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>alireza moradi</td>
+              <td>pralireza</td>
+              <td>ar.moradijob@gmail.com</td>
+              <td>berlin - example street ...</td>
+              <td>
+                <i
+                  class="material-icons orange-text darken-3 m-l-5 m-r-5 hov-pointer"
+                  >edit</i
+                >
+                <i class="material-icons red-text m-l-5 m-r-5 hov-pointer"
+                  >delete_forever</i
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div
+        class="pagination_container container p-l-9 p-r-9 p-t-15 p-b-10 flex-sb-m pos-fixed left-0 right-0 bottom-0 z-depth-4 rounded_top_30"
+      >
+        <div class="pagination_item_counts flex-l p-l-10 flex-l-m">
+          showing
+          <span class="m-l-5 m-r-5 max-w-50">
+            <input
+              type="number"
+              class="blue-text darken-2 no-border center-align m-b-0"
+              value="10"
+            />
+          </span>
+          of
+          <span class="blue-text darken-2 m-l-5 m-r-5">100</span>
+        </div>
+
+        <div class="pagination-buttons">
+          <i
+            class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill"
+            >keyboard_arrow_left
+          </i>
+          <i
+            class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill"
+            >keyboard_arrow_right
+          </i>
+        </div>
+      </div>
+    </section>
 
     <script src="/assets//materialize/js/materialize.min.js"></script>
     <script src="assets/js/app.js"></script>
-</body>
-
-
-
+    <script src="assets/js/user.js"></script>
+  </body>
 </html>
